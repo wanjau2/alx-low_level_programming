@@ -15,15 +15,15 @@ void times_table(void)
 		{
 			result = i * j;
 			if (j == 0)
-				_putchar('0' + result);
+				printf("%d",  result);
 			else
 			{
-				_putchar('0' + result);
+				printf("%2d" , result);
 				if (j != 9)
-					_putchar(',');
+					printf(",");
 			}
 			/*_putchar(result + ' ' + '0');*/
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
