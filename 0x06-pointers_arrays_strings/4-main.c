@@ -1,7 +1,11 @@
 #include "main.h"
-
-
-
+/**
+ * main - check the code
+ * @a: an array of intergers
+ * @n:the number of elements
+ *
+ * Return: nothing.
+ */
 void print_array(int *a, int n)
 {
 	int i;
@@ -18,7 +22,11 @@ void print_array(int *a, int n)
 	}
 	printf("\n");
 }
-
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 
 int main(void)
 {
