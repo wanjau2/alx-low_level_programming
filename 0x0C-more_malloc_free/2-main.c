@@ -11,7 +11,7 @@ int simple_print_buffer (char *buffer, unsigned int size)
 		{
 			printf(" ");
 		}
-		if (!(i % 10) && i);
+		if (!(i % 10) && i)
 		{
 			printf("\n");
 		}
@@ -19,6 +19,7 @@ int simple_print_buffer (char *buffer, unsigned int size)
 		i++;
 	}
 	printf("\n");
+	return (0);
 }
 int main (void)
 {
