@@ -3,6 +3,13 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * struct dog - the is a struct
+ * @name: the dogs name
+ * @owner: the dogs owners name
+ * @age: its age
+ * Return: null
+ */
 
 struct dog
 {
