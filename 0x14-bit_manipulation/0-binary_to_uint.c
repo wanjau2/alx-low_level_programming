@@ -1,8 +1,12 @@
 #include "main.h"
-
+/**
+ * binary_to_uint - converts binery to ints
+ * @b: the binary number
+ * Return: Always 0
+ */
 unsigned int binary_to_uint(const char *b)
 {
-	int a;	
+	int a;
 	unsigned int num;
 
 	num = 0;
