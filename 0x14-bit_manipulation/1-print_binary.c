@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * _pow - power
+ * @base: the base dovider
+ * @power: the divider
+ * Return: ALways 0.
+ */
 unsigned long int _pow(unsigned int base, unsigned int power)
 {
 	unsigned long int num;
@@ -11,7 +16,11 @@ unsigned long int _pow(unsigned int base, unsigned int power)
 	return (num);
 }
 
-
+/**
+ * print_binary - prints binary
+ * @n: number
+ * Return: Always 0.
+ */
 void print_binary(unsigned long int n)
 {
 	unsigned long int divisor, check;
