@@ -1,13 +1,19 @@
 #include <stdio.h>
-#include "variadic_functions.h"
+#include <stdlib.h>
+#include "main.h"
 
-int main(void)
+int main(int ac, char **av)
 {
-	int sum;
+	ssize_t n;
 
-	sum = sum_them_all(2, 98, 1024);
-	printf("%d\n", sum);
-	sum = sum_them_all(4, 98, 1024, 402, -1024);
-	printf("%d\n", sum);    
+	if (ac != 2)
+	{
+		dprintf(2, "Usage: %s filename\n", av[0]);
+		 exit(1);
+	}
+	n = read_textfile(av[1], 114);
+	printf("\n(printed chars: %li)\n", n);
+	n = read_textfile(av[1], 1024);
+	printf("\n(printed chars: %li)\n", n);
 	return (0);
 }
